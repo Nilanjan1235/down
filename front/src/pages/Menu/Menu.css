@@ -1,0 +1,245 @@
+.main-container {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  gap: 4px;
+  margin: 0px 16px;
+  color: rgb(25, 24, 48);
+  margin-left: 10px;
+
+  margin-bottom: 20px;
+  margin-top: 20px;
+ 
+
+
+}
+
+.pic {
+  width: 100%;
+  height: 172px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  /* border: 0.4px solid rgb(17, 17, 17); */
+
+  
+}
+
+.main-container hr {
+
+  width: 100%;
+  height: 1px;
+  margin: 10px 0;
+  background-color: rgb(25, 62, 83);
+  border: none;
+}
+
+.main-container p {
+
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.org-container {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* Force exactly 4 items per row */
+  gap: 16px;
+  /* Equal gap between items */
+  padding-top: 1.25rem;
+  /* pt-5 */
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  transition: none;
+
+
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /*    
+    align-items: center;  */
+  border: 1px solid rgb(0, 74, 117);
+  /* border-blue-200 */
+  border-radius: 0.75rem;
+  /* rounded-xl */
+  overflow: hidden;
+  cursor: pointer;
+  /* cursor-pointer */
+  transition: all 500ms;
+  /* transition-all duration-500 */
+  height: 350px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+
+
+  background-color: #fafafa
+
+
+}
+
+.content:hover {
+  transform: translateY(-10px);
+  /* hover:translate-y-[-10px] */
+}
+
+.org-image {
+  background-color: rgb(193, 251, 253);
+  width: 100%;
+  /* Make the image take up the full width */
+  height: 40%;
+  /* Set a fixed height for the image (or use auto if needed) */
+  object-fit: cover;
+  /* Ensures the image covers the area without distortion */
+  object-position: center;
+  /* Ensures the image is centered within its container */
+  border-bottom: 20px;
+  transition: none;
+
+
+}
+
+.content-gap {
+  padding: 15px;
+  margin-top: 5px;
+}
+
+.content-gap h3 {
+
+  margin-top: 3px;
+}
+
+.location {
+  display: flex;
+  gap: 1px;
+  margin-top: 8px;
+  align-items: center;
+}
+
+.buttons {
+
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  width: 40%;
+
+}
+
+.content-gap-para {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  /* Number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.btn {
+
+  cursor: pointer;
+  margin-left: 15px;
+  background-color: rgb(25, 24, 48);
+  color: #fefefe;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 0;
+  height: 30px;
+
+}
+
+.categ {
+  display: flex;
+  gap: 5px;
+}
+
+.btn:hover {
+
+  background-color: #3678f1ff;
+  color: rgb(2, 2, 3);
+  transform: scale(1.1);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.page-button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  background-color: #3678f1ff;
+  /* Blue background for active pages */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  min-width: 10px;
+  /* Give buttons a consistent width */
+  text-align: center;
+}
+
+.page-button:hover {
+  background-color: #0056b3;
+  /* Darker blue on hover */
+}
+
+.page-button.disabled {
+  background-color: #ddd;
+  /* Light gray for disabled buttons */
+  cursor: not-allowed;
+  /* Change cursor for disabled buttons */
+}
+
+.page-button.active {
+  background-color: rgb(25, 24, 48);
+  /* Highlight active page with dark blue */
+  font-weight: bold;
+  /* Make the active page number bold */
+}
+
+.page-button:focus {
+  outline: none;
+  /* Remove focus outline */
+}
+
+.page-button-prev-next {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 10px 18px;
+  /* Slightly larger padding for Prev/Next buttons */
+}
+
+.page-button-prev-next:hover {
+  background-color: #003d7a;
+  /* Even darker blue for hover effect on Prev/Next */
+}
+
+.page-button-prev-next:disabled {
+  background-color: #ddd;
+  /* Disable the Prev/Next button when at start/end */
+}
+
+.page-button-prev-next:disabled:hover {
+  background-color: #ddd;
+  /* Keep hover state for disabled Prev/Next */
+}
+
+.pagination-info {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 20px;
+  text-align: center;
+}

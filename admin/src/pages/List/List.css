@@ -1,0 +1,122 @@
+/* List.css */
+
+.list {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+
+.list p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.list-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.list-table-format {
+  display: grid;
+  grid-template-columns: 50px 1fr 1fr 1fr 1fr 2fr 120px 120px; /* Adjusted column width */
+  padding: 10px;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.list-table-format.title {
+  font-weight: bold;
+  background-color: #f4f4f4;
+}
+
+.list-table-format:hover {
+  background-color: #f0f0f0;
+}
+
+.list-table-format img {
+  width: 80px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.list-table-format p {
+  margin: 0 10px;
+}
+.cur{
+  display: flex;
+}
+.status-approved {
+  color: #eef8f0; /* Green for approved */
+  background-color: #03d30d ;
+  border-radius: 5px;
+}
+
+.status-rejected {
+  color: #fffefe; 
+  background-color: #e74c3c; /* Red for rejected */
+  border-radius: 5px;
+}
+
+.status-pending {
+  color: #ffffff; 
+  background-color: #f39c12; /* Yellow for pending */
+  border-radius: 5px;
+}
+
+.list-table-format .description {
+  /* Truncate the description to show only two lines */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cursor {
+  cursor: pointer;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.cursor:hover {
+  text-decoration: underline;
+}
+
+.title b {
+  text-align: center;
+  padding: 5px;
+}
+
+.title p {
+  padding: 0 10px;
+  margin: 0;
+}
+
+.list-table-format .approve, .list-table-format .cancel {
+  display: inline-block;
+  margin: 0 5px; /* Adjust margin for buttons */
+}
+
+.title b, .list-table-format p {
+  text-align: center;
+}
+
+/* Add responsive design for smaller screens */
+@media (max-width: 768px) {
+  .list-table-format {
+    grid-template-columns: 50px 1fr 1fr 1fr 1fr 2fr 100px 100px; /* Adjust for mobile */
+  }
+
+  .list-table-format .description {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3; /* Show up to 3 lines on smaller screens */
+  }
+}
+

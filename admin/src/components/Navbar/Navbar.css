@@ -1,0 +1,23 @@
+.navbar{
+
+    width: 100%;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color:#3678f1ff;
+    border-bottom: 1px solid rgb(25, 24, 48); 
+    border-top: 1px solid rgb(25, 24, 48); 
+    
+}
+.navbar .logo {
+    
+    width: 290px;
+    height: 290px;
+    color: black;
+    margin-bottom: 45px;
+    overflow: hidden;}
+.navbar .profile{
+    width: 40px;
+}

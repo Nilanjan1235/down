@@ -1,0 +1,25 @@
+.modtime{
+
+    display: flex;
+    gap: 5px;
+   
+
+}
+.add-item-page-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fffc52;
+    font-family: 'Arial', sans-serif;
+    padding: 2rem;
+  }
+  .add-item-page-1 h2 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    margin-bottom: 580px;
+  
+  }

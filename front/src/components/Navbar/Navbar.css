@@ -1,0 +1,294 @@
+.navbar{
+
+    width: 100%;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color:#3678f1ff;
+
+    border-top: 1px solid rgb(25, 24, 48); 
+    
+}
+.navbar-profile {
+
+    display: flex;
+    margin-top: 2px;
+    background-color: #3678f1;
+    cursor: pointer;
+}
+.navbar-profile:hover {
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.nav-profile-dropdown{
+
+    margin-top: 30px;
+    background-color: #3678f1;
+}
+.navbar-profile p{
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.navbar .logo {
+    
+    width: 340px;
+    height: 400px;
+    color: black;
+    margin-bottom: 43px;
+
+    overflow: hidden;
+}
+.navbar-menu{
+    display: flex;
+    list-style: none;
+    gap: 16px;
+    color: rgb(25, 24, 48);
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 170px;
+  
+    
+}
+
+.navbar-menu a {
+    display: flex;
+    align-items: center;  /* Vertically center the icon and text */
+    text-decoration: none;
+    color:  rgb(25, 24, 48);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0;  /* Remove padding to prevent extra space */
+    margin: 0;  /* Remove margin to eliminate any extra space */
+    gap: 2px; /* Add a small gap between icon and text */
+}
+
+.navbar-menu a:hover {
+
+    color:  #ffffff;
+}
+.navbar-icon{
+
+    max-width: 80px;
+    max-height: 80px;
+
+}
+
+.navbar-right{
+
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-right: 100px;
+}
+.navbar-search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 30px; /* Rounded corners */
+    border: 2px solid #ccc; 
+    padding: 8px 12px;
+    background-color: #f5f5f5; /* Light background for search box */
+    transition: all 0.3s ease;
+    height: 30px;
+}
+
+.navbar-search-container:hover {
+    border-color: #007BFF; /* Highlight border on hover */
+}
+
+.navbar-search-input {
+    border: none;
+    outline: none;
+    margin: 0px transparent;
+    background-color: transparent;
+   
+    height: 8px;
+    font-size: 14px;
+    width: 200px; /* Width of input */
+    color: #333;
+    border-radius: 25px;
+    transition: width 0.3s ease, box-shadow 0.3s ease;
+}
+.navbar-search-input input {
+    height: 8px;}
+
+
+.navbar-search-input::placeholder {
+    color: #bbb;
+}
+
+.navbar-search-icon {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 10px; /* Positioning the search icon inside the input */
+    pointer-events: none; /* So the icon doesn't interfere with input typing */
+}
+
+/* Focus effect for search input */
+
+.navbar button{
+
+    background-color:  rgb(33, 33, 43);
+    font-size: 15px;
+    color: white;
+    border: 1px solid rgb(31, 32, 46);
+    padding: 5px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-right: 15px;
+    font-weight: 600;
+    height: 32px;
+}
+.navbar button:hover{
+
+    background-color: rgb(240, 79, 79);
+    color:rgb(33, 33, 43);
+
+}
+.navbar-menu .active {
+    color: #ffffff;                    /* Set the color of the active link */
+    background-color: #3678f1;       /* Background color for the active link */
+    border-radius: 5px;  
+    padding-bottom: 2px;          
+  }
+
+
+
+.navbar li{
+
+    cursor: pointer;
+}
+
+.navbar-search-icon{
+
+    position: relative;
+   
+}
+
+.navbar-profile{
+    position: relative;
+}
+.nav-profile-dropdown{
+    position: absolute;
+    display: none;
+    right: 0;
+    width: 170px;
+    z-index: 1;
+
+}
+.nav-profile-dropdown.open{
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fefefe;
+    border: 1px solid #3678f1;
+    padding: 12px 25px;
+    border-radius: 4px;
+    outline: 2px solid white;
+    width: 170px;
+    list-style: none;
+
+
+}
+/* Display the dropdown when 'listing' is active */
+
+
+.navbar-profile:hover .nav-profile-dropdown{
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    background-color: #fefefe;
+    border: 1px solid #3678f1;
+    padding: 12px 25px;
+    border-radius: 4px;
+    outline: 2px solid white;
+    list-style: none;
+
+
+}
+.nav-profile-dropdown.open p,.nav-profile-dropdown p{
+
+    font-size: 14px;
+    color: rgb(46, 46, 51);
+
+}
+.nav-profile-dropdown.open p:hover{
+    color: rgb(0, 88, 219);
+}
+.nav-profile-dropdown li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+    cursor: pointer;
+    color: rgb(46, 46, 51);
+}
+.nav-profile-dropdown img{
+    width: 20px;
+}
+.nav-profile-dropdown li:hover{
+    color:  rgb(240, 79, 79);
+}
+@media (max-width:1050px) {
+    .navbar.logo{
+
+        width: 140px;
+    }
+    .navbar-menu{
+
+        gap: 20px;
+        font-size: 17px;
+    }
+    .navbar-right{
+
+        gap: 30px;
+    }
+    .navbar-right img{
+        width: 22px;
+    }
+    .navbar-right button{
+
+        padding: 8px 25px;
+    }
+} 
+
+@media (max-width:900px) {
+    .navbar.logo{
+
+        width: 120px;
+    }
+    .navbar-menu{
+
+        gap: 15px;
+        font-size: 16px;
+    }
+    .navbar-right{
+
+        gap: 20px;
+    }
+    .navbar-right img{
+        width: 20px;
+    }
+    .navbar-right button{
+
+        padding: 7px 20px;
+    }
+} 
+@media (max-width:750px) {
+ 
+    .navbar-menu{
+
+        display: none;
+        
+    }
+    
+} 

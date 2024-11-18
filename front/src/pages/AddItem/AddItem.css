@@ -1,0 +1,133 @@
+/* AddEvent.css */
+
+.add-item-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #74c0ff;
+  font-family: 'Arial', sans-serif;
+  padding: 2rem;
+}
+
+.add-item-page h2 {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  margin-bottom: 420px;
+
+}
+
+form {
+  background-color: #fff;
+  padding: 2.5rem;
+  border-radius: 8px;
+  max-width: 1100px; /* Increased width */
+  width: 100%;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  
+}
+
+.add-img-upload p,
+.add-name p,
+.add-event p,
+.add-location p,
+.add-time p,
+.add-phone p,
+.add-price p,
+.add-desc p,
+.add-date p
+{
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.add-img-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.add-img-upload label img {
+  cursor: pointer;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px dashed #ccc;
+  padding: 5px;
+  transition: all 0.3s ease;
+}
+
+.add-img-upload label img:hover {
+  border-color: #007bff;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+textarea,
+select {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #007bff;
+  background-color: #fff;
+}
+
+textarea {
+  resize: none;
+}
+
+.bty {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.bty:hover {
+  background-color: #0056b3;
+}
+
+.add-time,
+.add-time-2,
+.add-time-3 {
+  flex: 1;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #bbb;
+}
+
+@media (max-width: 768px) {
+  form {
+      max-width: 100%;
+      padding: 1.5rem;
+  }
+}

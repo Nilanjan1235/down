@@ -1,0 +1,214 @@
+/* Overall container */
+.product-details-container {
+    padding: 30px;
+    max-width: 1100px;
+    width: 100%;
+    min-height: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);  /* Softer, larger shadow for depth */
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 20px; /* Rounded corners for modern look */
+    border: none; /* Removing hard border */
+    overflow: hidden; /* Prevent content from spilling outside */
+}
+.product-details-container h2{
+
+    color: rgb(25,24,48)
+
+}
+
+
+/* Flex container for product details */
+.product-details-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;  /* Allow content to wrap on smaller screens */
+}
+.func{
+    color: #2094ec;
+    
+}
+.func-1{
+    color: rgb(247, 66, 66);
+}
+
+/* Product Image */
+.product-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    max-width: 45%;
+    text-align: center;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+    border-radius: 15px;  /* Soft rounded corners */
+    transition: transform 0.3s ease;  /* Smooth image hover effect */
+}
+
+.product-image img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Product Information */
+.product-info {
+    flex: 2;
+    max-width: 50%;
+}
+
+/* Product Title */
+.product-info h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #333;  /* Slightly darker for better readability */
+    margin-bottom: 15px;
+    font-family: 'Outfit', sans-serif;
+    line-height: 1.2;  /* Tighten line height for a more polished look */
+}
+
+/* Product Category */
+.product-category {
+    font-size: 1.3rem;
+    color: #2e2e2e;  /* Lighter color for less emphasis */
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.product-info hr{
+
+    width: 100%;
+    height: 1px;
+    margin: 10px 0;
+    background-color: rgb(54, 172, 241);
+    border: none;
+
+}
+.categ-1{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+    color: #333333;
+    font-weight: 700;
+    background-color: #2094ec;
+    padding: 10px;
+    border-radius: 10px;
+    min-width: 20px;
+
+}
+.bfd{
+
+    display: flex;
+    gap: 5px;
+    margin-bottom: 35px;
+    cursor: pointer;
+
+}
+
+/* Location section */
+.location-m {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #2e2e2e;
+}
+
+.location-j {
+    font-size: 1.3rem;
+}
+.phone{
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+    gap: 8px;
+
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+}
+.phone-content{
+    font-size: 2rem;
+
+    
+}
+
+
+/* Product Description */
+.product-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    font-weight: 400;
+    margin-bottom: 40px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Button Styling (if any buttons are included in the details section) */
+.product-info .button {
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    background-color: #0073C8; /* Bright accent color */
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.product-info .button:hover {
+    background-color: #005A91;  /* Darker shade on hover */
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .product-details-container {
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    .product-details-content {
+        flex-direction: column;  /* Stack content vertically */
+        gap: 20px;
+    }
+
+    .product-image {
+        max-width: 100%;  /* Ensure image fills container on small screens */
+    }
+
+    .product-info {
+        max-width: 100%;
+    }
+
+    .product-info h1 {
+        font-size: 2rem;  /* Adjust title size on smaller screens */
+    }
+
+    .product-category {
+        font-size: 1.1rem;
+    }
+
+    .product-description {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-info h1 {
+        font-size: 1.8rem;
+    }
+
+    .product-category {
+        font-size: 1rem;
+    }
+
+    .product-description {
+        font-size: 1rem;
+    }
+}
